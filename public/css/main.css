@@ -1,0 +1,1120 @@
+/* -------------------------Global CSS Style----------------------  */
+* {
+  outline: none;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f7f8f3;
+  padding: 50px 0;
+  overflow: hidden;
+  font-family: "CircularStd", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "CircularStd", sans-serif;
+}
+
+a {
+  color: #acadae;
+}
+
+/* --------------Shared across all pages--------------- */
+.page-header h1 {
+  margin-left: 5px;
+  font-size: 5.9rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.well {
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  max-width: 100%;
+}
+
+.search-box {
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-search {
+  margin-right: 15px;
+}
+
+.buttons-box {
+  margin: 10px 0;
+}
+
+.nav-tabs {
+  display: flex;
+  margin: 30px auto;
+}
+
+.nav-tabs > li {
+  flex: 50%;
+  text-align: center;
+}
+
+.nav-tabs > li > a {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  font-weight: 600;
+  font-size: 1.2em;
+  border-top: 2px solid #f9ba48;
+  margin-bottom: 0;
+}
+
+.form-group input,
+.form-group select {
+  min-width: 100%;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+input[type="date"].form-control,
+input[type="time"].form-control,
+input[type="datetime-local"].form-control,
+input[type="month"].form-control {
+  line-height: 20px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+.label {
+  font-weight: normal;
+  padding: 0.5em 0.6em 0.3em;
+}
+/* End Global Stylee */
+/* ======================================================================================= */
+
+/* ----------------------------------------Top Navbar Style------------------------------- */
+.navbar {
+  background-color: #34495e;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: #2c3e50;
+}
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: transparent;
+}
+
+.messageNontify {
+  position: relative;
+}
+
+.messageNontify span {
+  position: absolute;
+  top: -29px;
+  left: 19px;
+  background-color: red;
+  color: red;
+  width: 1px;
+  height: 0px;
+  font-size: 50px;
+}
+
+.messageNontify .dropdown-menu {
+  min-width: 250px;
+  padding: 5px;
+}
+
+.messageNontify .dropdown-menu .page-header {
+  border-bottom: none;
+  margin: 1px 0px -9px 1px;
+}
+
+.messageNontify .dropdown-menu .alert {
+  border-radius: 0;
+  margin: 0;
+}
+/* End Top Nav Style */
+/* ======================================================================================= */
+
+/* -------------------------------------Start Login Page Stylee--------------------------- */
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.card-container.card {
+  width: 350px;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  /* just in case there no content*/
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  /* shadows and rounded borders */
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.profile-name-card {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 0;
+  min-height: 1em;
+}
+
+.reauth-email {
+  display: block;
+  color: #404040;
+  line-height: 2;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+  direction: ltr;
+  height: 44px;
+  font-size: 16px;
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"],
+.form-signin input[type="text"],
+.form-signin button {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+  border-color: rgb(104, 145, 162);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgb(104, 145, 162);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+  padding: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  height: 36px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus {
+  color: rgb(12, 97, 33);
+}
+
+.footer {
+  margin-top: 10px;
+}
+
+.footer-icons {
+  margin-top: 5px;
+}
+/* End Login page Stylee */
+/* ======================================================================================= */
+
+/* ------------------------------Start Main Dashboard Style------------------------------ */
+.mainboard-heading h1 {
+  position: relative;
+  top: 1%;
+  left: 0;
+  max-width: 50%;
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.mainboard-heading h1::after {
+  content: "";
+  border-bottom: 5px solid #fac146;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+}
+
+.main-board .well {
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  height: 500px;
+  max-height: 500px;
+}
+
+.main-board .well .card-img img {
+  height: 100%;
+  width: 100%;
+}
+/* End Main Dashboard Style */
+/* ======================================================================================== */
+
+/* ------------------------------Start HR Dashboard Style---------------------------------- */
+
+.box {
+  padding: 60px 0px;
+}
+
+.box-part {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+}
+
+.job-vac {
+  height: 374px;
+  max-height: 374px;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+.vacancy-statistics table tr td:nth-child(4) {
+  color: #0097cf;
+}
+
+.vacancy-statistics table tr td:nth-child(4),
+.vacancy-statistics table tr td:last-child {
+  cursor: pointer;
+}
+
+.vacancy-statistics .panel-default > .panel-heading {
+  background-color: gainsboro;
+  border: none;
+  border-radius: 0;
+  color: #333;
+}
+
+.vacancy-statistics .panel-default > .panel-heading a {
+  font-size: 95%;
+  font-weight: 500;
+}
+
+.vacancy-statistics .panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+/* HR Dashboard Style */
+/* ====================================================================================== */
+
+/* -------------------------------Start loans Page Style---------------------------------- */
+
+.loans-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+.loans-modal label {
+  display: inline-block;
+  width: 50%;
+  max-width: 35%;
+}
+
+.loans-modal form > div label {
+  display: inline;
+  margin: 0;
+}
+/* End Loans Page Stylee */
+/* ====================================================================================== */
+
+/* ----------------------------------------------------------------------------------------
+                              Start Employees Pages Style
+---------------------------------------------------------------------------------------- */
+
+/* -------------------------  Start All Employee Stylee----------------------------------- */
+
+#sidebar {
+  top: 0;
+  left: 0;
+  background-color: #212e3c;
+  max-width: 100%;
+  height: 100%;
+}
+
+#sidebar li {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 0;
+  padding-top: 10px;
+}
+
+#sidebar li.active {
+  background: #eeeeee;
+}
+
+#sidebar li.active a {
+  color: #23527c;
+}
+
+#sidebar li a {
+  font-size: 1.1em;
+}
+
+.employees-heading {
+  margin-top: 20px;
+}
+
+.employees-heading .search-box {
+  margin: 20px 0;
+}
+
+.table .checkbox input[type="checkbox"] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-block a {
+  text-decoration: none;
+}
+
+.card-block .well img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.card-block .well .img-responsive {
+  margin: 0 auto;
+}
+
+.card-block .well h3 {
+  color: #4f4f4f;
+}
+
+.card-block .well p {
+  color: #555;
+}
+/* ========================================================================================= */
+
+/* ------------------------------Start Employee Application Page Style---------------------- */
+
+.img-box input {
+  border: 3px solid #f9ba48;
+  padding-bottom: 30px;
+}
+
+.candidate-from h2 {
+  background-color: #eee;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border-left: 3px solid #f9ba48;
+}
+
+.lead img {
+  position: relative;
+  top: -3px;
+}
+
+#arabicForm {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", sans-serif;
+}
+
+
+.img-arbicbox p{
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  text-align: center;
+} 
+
+#arabicForm h2 {
+  font-family: "Cairo", sans-serif;
+  border-right: 3px solid #f9ba48;
+  border-left: none;
+} 
+
+#arabicForm p {
+  font-family: "Cairo", sans-serif;
+}
+
+#arabicForm table tr th,
+#arabicForm table tr td  {
+  direction: rtl;
+  text-align: right;
+}
+
+.arabic-checkbox .checkbox {
+  direction: ltr;
+  text-align: left;
+}
+
+
+
+/* End Employees Page Style */
+/* ======================================================================================= */
+
+/* --------------------------------- Start Attendance Page Style-------------------------- */
+
+.attendance-table tbody tr td:nth-child(9),
+.attendance-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+.newAttend-table tbody tr td {
+  cursor: auto;
+}
+/* End Attendance Page Stylee */
+/* ======================================================================================= */
+
+/* ------------------------------Start permissions Page Style---------------------------- */
+
+.permissions-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+.permitEdit-table tbody tr td:nth-child(8),
+.permitEdit-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+/* End permissions Page style */
+/* ====================================================================================== */
+
+/* --------------------------------- Start Vaction Page Stylee -------------------------------- */
+.vacations-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+.holidays-table tbody tr td:nth-child(5),
+.holidays-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+.suspended-table tbody tr td:nth-child(6),
+.suspended-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+.modal-body label {
+  display: inline-block;
+  width: 50%;
+  max-width: 35%;
+}
+
+.modal-body form > div label {
+  display: inline;
+  margin: 0;
+}
+/* End Vaction Stylee*/
+/* ======================================================================================== */
+
+/* -------------------------------------Start User Profile Stylee------------------------ */
+
+.panel-default {
+  border: none;
+}
+
+.userInfo {
+  border-right: 2px dashed #8e8e8e;
+}
+
+.userInfo .media-heading {
+  color: #4f4f4f;
+}
+
+.userInfo .job-title,
+.userInfo .employee-id,
+.userInfo .hireDate {
+  font-size: 1.1em;
+  color: #8e8e8e;
+}
+
+.personal-info li {
+  margin-bottom: 10px;
+}
+
+.personal-info li a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.personal-info li .title {
+  color: #4f4f4f;
+  float: left;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.personal-info li .text {
+  color: #8e8e8e;
+  display: block;
+  overflow: hidden;
+  font-size: 1.1em;
+}
+
+.edit-icon {
+  background-color: #ccc;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 8px 10px 0 0;
+  color: #333;
+  transition: all 0.5 ease;
+
+  text-align: center;
+}
+
+.edit-icon:hover {
+  background-color: #2c3e50;
+  color: #fff;
+  transition: all 0.5 ease;
+}
+
+.card-box .panel {
+  min-height: 350px;
+  max-height: 350px;
+  border: none;
+  box-shadow: 0 1px 0 0 rgba(26, 23, 23, 0.2);
+  background-color: #fff;
+}
+
+.card-box .panel-default > .panel-heading {
+  border-bottom: none;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #fff;
+  color: #333;
+}
+
+.card-box .panel-heading {
+  padding: 14px 0;
+}
+
+.PayrollType .panel {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.experience .panel {
+  box-shadow: none;
+  min-height: 200px;
+  max-height: 200px;
+}
+.experience .title {
+  color: #4f4f4f;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.experience .text {
+  color: #8e8e8e;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  padding-left: 20px;
+}
+
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+/* End User Profile Stylee */
+/* ============================================================================================== */
+
+/* --------------------------------- Start Job Vacancies Stylee -------------------------------- */
+.jobVacancies-table tbody tr td:nth-child(7) a {
+  color: #337ab7;
+}
+
+.jobVacancies-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+.candidate-info p {
+  font-size: 1em;
+  font-weight: 800;
+  color: #555;
+
+}
+
+.CEO-Evalution h3,
+.superEvalution h3 {
+  background-color: #eee;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border-left: 3px solid #f9ba48;
+}
+
+.CEO-Evalution .card {
+  margin-top: 0;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single,
+.irs--flat .irs-handle>i:first-child,
+.irs--flat .irs-bar {
+  background-color: #337ab7;
+}
+
+.superEvalution h3 {
+  border-left: none;
+  /* border-right: 3px solid #f9ba48; */
+}
+
+.superEvalution .panel-group .panel .panel-body ol{
+  padding: 0
+}
+
+
+
+/* Evaluatio ACCORDION Style */
+
+a:hover, a:focus{
+  text-decoration: none;
+  outline: none;
+}
+#accordion .panel{
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+#accordion .panel-heading{
+  padding: 0;
+  border-radius:0;
+  border: none;
+}
+#accordion .panel-title a{
+  display: block;
+  padding: 14px 30px 14px 70px;
+  font-size: 16px;
+  font-weight: bold;
+  /* color: #fff; */
+  color: #1e4276;
+  /* background: #ef6145; */
+  background: #F9BB48;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a.collapsed{
+  background: #f8f8f8;
+  color: #1e4276;
+}
+#accordion .panel-title a.collapsed:hover{
+  /* color: #ef6145; */
+  color:#F9BB48;
+}
+#accordion .panel-title a:before{
+  content: "";
+  width: 55px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: -13px;
+  transform: skewX(-25deg);
+  transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a.collapsed:hover:before{
+  background: #F9BB48;;
+}
+#accordion .panel-title a:after{
+  /* content: "\f047";
+  font-family: FontAwesome; */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: #fff;
+  transform: translateY(-50%);
+}
+#accordion .panel-title a.collapsed:after{
+  color: #9f9f9f;
+}
+#accordion .panel-title a.collapsed:hover:after{
+  color: #fff;
+}
+#accordion .panel-body{
+  font-size: 14px;
+  color: #5a3245;
+  line-height: 25px;
+  padding: 20px 15px 20px 40px;
+  position: relative;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+#accordion .panel-body:before{
+  content: "";
+  width: 5px;
+  height: 40px;
+  /* background: #ef6145; */
+  background: #F9BB48;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+#accordion .panel-body p{
+  margin-bottom: 0;
+}
+
+/* ============================================================================================ */
+
+
+/* --------------------------------- Start Complaints Page Stylee -------------------------------- */
+
+.complaintRequests-table tbody tr td:last-child {
+  cursor: pointer;
+}
+
+/* ============================================================================================ */
+
+
+
+/*================================================= 
+              Start Dashboard Chart Style 
+=================================================*/
+.chart-heading {
+  color: #666;
+}
+
+#chartdiv,
+#chartdiv2,
+#chartdiv3,
+#chartdiv4,
+#chartdiv5,
+#chartdiv7 {
+  width: 100%;
+  height: 100%;
+}
+
+#chartdiv5,
+#chartdiv6,
+#chartdiv7 {
+  height: 389px;
+  max-height: 389px;
+}
+/* End Dashboard Chart Style */
+/* ============================================================================== */
+
+
+
+/*=================================================================
+                   Start modal Style
+=================================================================== 
+ */
+
+/* Delete Modal Style */
+.modal-confirm {
+  color: #636363;
+  width: 400px;
+}
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+.modal-confirm .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+}
+.modal-confirm .modal-body {
+  color: #999;
+}
+.modal-confirm .modal-footer {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+  color: #999;
+}
+.modal-confirm .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  z-index: 9;
+  text-align: center;
+  border: 3px solid #f15e5e;
+}
+.modal-confirm .icon-box i {
+  color: #f15e5e;
+  font-size: 46px;
+  display: inline-block;
+  margin-top: 13px;
+}
+.modal-confirm .btn {
+  color: #fff;
+  border-radius: 4px;
+  background: #60c7c1;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  min-width: 120px;
+  border: none;
+  min-height: 40px;
+  border-radius: 3px;
+  margin: 0 5px;
+  outline: none !important;
+}
+.modal-confirm .btn-info {
+  background: #c1c1c1;
+}
+.modal-confirm .btn-info:hover,
+.modal-confirm .btn-info:focus {
+  background: #a8a8a8;
+}
+.modal-confirm .btn-danger {
+  background: #f15e5e;
+}
+.modal-confirm .btn-danger:hover,
+.modal-confirm .btn-danger:focus {
+  background: #ee3535;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+/* ================================================================================== */
+
+/*  ----------------------------------Start Success Message Modal---------------------*/
+
+/*--thank you pop starts here--*/
+.thank-you-pop{
+	width:100%;
+ 	padding:20px;
+	text-align:center;
+}
+.thank-you-pop img{
+	width:76px;
+	height:auto;
+	margin:0 auto;
+	display:block;
+	margin-bottom:25px;
+}
+
+.thank-you-pop h1{
+	font-size: 42px;
+    margin-bottom: 25px;
+	color:#5C5C5C;
+}
+.thank-you-pop p{
+	font-size: 20px;
+    margin-bottom: 27px;
+ 	color:#5C5C5C;
+}
+.thank-you-pop h3.cupon-pop{
+	font-size: 25px;
+    margin-bottom: 40px;
+	color:#222;
+	display:inline-block;
+	text-align:center;
+	padding:10px 20px;
+	border:2px dashed #222;
+	clear:both;
+	font-weight:normal;
+}
+.thank-you-pop h3.cupon-pop span{
+	color:#03A9F4;
+}
+.thank-you-pop a{
+	display: inline-block;
+    margin: 0 auto;
+    padding: 9px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #8BC34A;
+    border-radius: 17px;
+}
+
+/*--thank you pop ends here--*/
+
+
+/*====================================================
+                    loader Style
+====================================================== 
+ */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+}

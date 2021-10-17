@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marvel | Teacher Homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/imgs/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/circular-std.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/buttons.bootstrap.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    
+    <div id="loader"></div>
+    <div id="myDiv" class="animate-bottom">
+     
+      <nav class="navbar navbar-fixed-top">
+        <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"
+              >Marvel Cloud Community</a
+            >
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+              <button type="submit" class="btn btn-success">
+                <i class="fas fa-search"></i> Search
+              </button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- Notification navbar  -->
+              <li class="dropdown messageNontify">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="far fa-bell"></i> Notification
+                </a>
+                <span class="">.</span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="page-header">
+                      <h5><i class="far fa-bell"></i> Notification</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="alert alert-warning" role="alert">
+                      Oh snap! Change a few things up and
+                      <a href="#" class="alert-link">try submitting again.</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="alert alert-warning" role="alert">
+                      Oh snap! Change a few things up and
+                      <a href="#" class="alert-link">try submitting again.</a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="alert alert-warning" role="alert">
+                      Oh snap! Change a few things up and
+                      <a href="#" class="alert-link">try submitting again.</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i>
+                 <%= user.name.charAt(0).toUpperCase() + user.name.slice(1) %>
+                  <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      <!-- End Navbar tags -->
+
+      <!-- -----------------------------Start Teacher Page Header-------------------- -->
+      <div class="HRM-wrapper">
+        <div class="create-class">
+          <div class="content">
+            <form action="/class/add" method="post">
+              <span class="close">X</span>
+              <span id="reauth-email" class="reauth-email"></span>
+              
+              <label style="width: 55%;margin: 10px 0;">
+                Enter Class Name : 
+              </label>
+              
+              <input
+                type="text"
+                id="inputEmail"
+                class="form-control"
+                name="newClass"
+                placeholder="Enter your class name"
+                required
+                autofocus
+              />
+              <button class="btn btn-success" type="submit" >Finish</button>
+              <form>
+          </div>
+        </div>
+       <div class="container">
+          <div class="pageHead">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="page-header">
+                 <h2>Welcome Back, <%= user.name.charAt(0).toUpperCase() + user.name.slice(1) %></h2>
+                 <h4 style="color:red">
+                
+                  <% if(typeof error !== 'undefined'){ %>
+                    <p><%= error %></p>
+                <% } %>
+  
+                </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Teacher Page Header -->
+
+          <!----------------------------- Start Card Wrapper -------------------------->
+          <div class="Cards-wrapper">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <!-- Start Payroll Card -->
+                  
+
+
+              
+                  <% for(var i=0; i<classes.length; i++) {%>
+                    <div class="col-lg-4">
+                      <div class="box-part text-center">
+                        <img src="/imgs/a.png" alt="" />
+                        <div class="title">
+                          <h4><%= classes[i].name %></h4>
+                        </div>
+                        <a href="/class/<%= classes[i].name %>">Go to Class</a>
+                      </div>
+                    </div>
+                 <% } %>
+                 <!-- 4021 -->
+                    <% if(user.type === "Leader" || user.type=="Admin"){ %>
+                 <div class="col-lg-4 new-class" style="cursor:pointer">
+                  <div class="box-part text-center" style="min-height : 160px;display:flex;align-items:center;justify-content:center">
+                    <div class="title">
+                      <h4  style="font-size:40px"> Create</h4>
+                    </div>
+                  </div>
+                </div>
+                <%  } %>
+                  <!-- End Payroll Card -->
+
+                
+                </div>
+                <!-- /.row-->
+              </div>
+              <!-- ================================================================ -->
+        
+            </div>
+            <!-- =========================================================================
+                        Strat Job Vacancies | Transportation | Complaints | Reports row
+            =========================================================================== -->
+          </div>
+          <!-- /.Cards-wrapper -->
+          <!-- ==================================================================================== -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.HRM-wrapper -->
+    </div>
+    <!-- /.animate-bottom -->
+    <!-- ================================================================================= -->
+
+    <!-------------------------------------- Javascript -------------------------------------->
+    <script src="/js/index.js" ></script>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

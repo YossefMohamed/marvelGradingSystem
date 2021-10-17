@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marvel School | Login</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/circular-std.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      body {
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start login form-block -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="">
+            <img
+              src="imgs/brand-logo.png"
+              class="img-responsive"
+              alt=""
+              width="70"
+              height="100"
+            />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          class="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        ></div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <h1 style="font-size: 3.3em; font-weight: 1000; line-height: 60px">
+              Welcome to<br />
+              <span style="color: #254b7a">Marvel</span> Cloud Community!
+            </h1>
+            <p style="font-weight: 300; font-size: 1.1em">
+              Easily deliberate and collaborate with your co-teachers
+            </p>
+          </div>
+          <div class="image-wrapper">
+            <img src="imgs/hero.png" alt="" class="img-responsive" />
+          </div>
+        </div>
+        <!-- 
+          ===========================================================================
+                              Start Login Form-box
+          ===========================================================================
+         -->
+        <div class="col-lg-4">
+          <div class="card card-container">
+            <img
+              id="profile-img"
+              class="profile-img-card"
+              src="imgs/man-body-person-blue-round-512.png"
+            />
+
+            <p
+              id="profile-name"
+              class="profile-name-card text-danger"
+              style="color: red"
+            >
+              <%= error %>
+            </p>
+            <form class="form-signin" action="/login" method="post">
+              <span id="reauth-email" class="reauth-email"></span>
+              <input
+                type="text"
+                id="inputEmail"
+                class="form-control"
+                name="user"
+                placeholder="Enter your user id"
+                required
+                autofocus
+              />
+
+              <input
+                type="password"
+                id="inputPassword"
+                class="form-control"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+              <div id="remember" class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Remember Me
+                </label>
+              </div>
+              <button
+                class="btn btn-lg btn-success btn-block btn-signin"
+                type="submit"
+              >
+                Login
+              </button>
+            </form>
+            <!-- /form -->
+            <a href="#" class="forgot-password"> Forgot the password? </a>
+          </div>
+          <!-- /card-container -->
+        </div>
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+    <hr />
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Marvel International School</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+              labore nostrum mollitia dolorem ab exercitationem nihil! Inventore
+              ducimus aliquid quam veritatis iure quidem, aliquam odit labore
+              sed neque? Perferendis, quos.
+            </p>
+            <!-- <a href="">
+              <img
+                src="imgs/brand-logo.png"
+                class="img-responsive"
+                alt=""
+                width="100"
+                height="100"
+              />
+            </a> -->
+          </div>
+          <div class="col-sm-3">
+            <h3>Useful links</h3>
+            <ul class="list-unstyled">
+              <li><a href="">About us</a></li>
+              <li><a href="">Awards</a></li>
+              <li><a href="">Site Map</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="contact-box">
+              <h3>Contact</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> Sheikh Zayed City, Giza
+                  Governorate - Giza, Egypt
+                </li>
+                <li><a href=""> info@marvel.edu.eg</a></li>
+                <li>+ 01 234 567 88</li>
+                <li>+ 01 234 567 89</li>
+                <div class="footer-icons">
+                  <a href="#" class=""
+                    ><img src="imgs/facebook.png" alt=""
+                  /></a>
+                  <a href="#" class=""><img src="imgs/twitter.png" alt="" /></a>
+                  <a href="#" class=""
+                    ><img src="imgs/linkedin.png" alt=""
+                  /></a>
+                  <a href="#" class=""
+                    ><img src="imgs/google-plus.png" alt=""
+                  /></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

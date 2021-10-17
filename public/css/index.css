@@ -1,0 +1,58 @@
+.create-class {
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  z-index: 3;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-container{
+  width: 15%;
+  position:fixed;
+  top: 60px;
+  z-index: 8999999999999999998;
+  padding: 10px;
+  right: 60px;
+  font-weight: bold;
+  min-height:50px ;
+  display: none;
+  align-items: center;
+}
+.create-class .content {
+  width: 30%;
+  height: 300px;
+  background: white;
+  position: relative;
+}
+.create-class .content form {
+  display: flex;
+  height: 100%;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content button {
+  margin-top: 10px;
+
+  width: 55%;
+}
+.content input {
+  width: 55%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+}
+.content form .close,
+.closey {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: black;
+}
+.new-class {
+}
